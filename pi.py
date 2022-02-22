@@ -12,7 +12,8 @@ def pi_approx(num_iterations):
     for i in range(num_iterations):
         s = s-((1/k) * (-1)**i)
         k += 2
-        print(4*s)
+        if i%10000 == 0:
+            print(4*s)
 
     return 4 * s
 

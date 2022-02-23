@@ -1,8 +1,7 @@
 from math import *
-#import numpy as np
 
-n= 2400000000
-x= 1
+n = 2400000000
+x = 1
 series = []
 
 def pi_approx(num_iterations):

@@ -15,7 +15,6 @@ found = False
 
 def shuffle():
     random.shuffle(listOfCards)
-    #print(shuffled)
     return listOfCards
 
 def check(deck):
@@ -28,4 +27,6 @@ def check(deck):
 i = 0
 while found == False:
     i+=1
-    print("shuffle "+str(i)+": "+check(shuffle()))
+    check(shuffle())
+    if i%100000 == 0:
+        print("shuffle: "+str(i)+" - not yet found")
